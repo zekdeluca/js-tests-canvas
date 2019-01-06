@@ -6,7 +6,9 @@ class MyClass {
   }
 
   setToZero() {
-    this.attributeOne = 0, this.attributeTwo = 0, this.attributeThree = 0;
+    this.attributeOne = 0;
+    this.attributeTwo = 0;
+    this.attributeThree = 0;
   }
 }
 
@@ -25,7 +27,7 @@ class MyMainClass {
   }
 }
 
-module.exports = {
+export {
   MyClass,
   MyMainClass
-}
+};

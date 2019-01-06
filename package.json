@@ -1,13 +1,19 @@
 {
   "name": "js-tests-canvas",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
-    "test": "mocha --compilers js:babel/register"
+    "test": "mocha --compilers js:babel-core/register"
   },
-  "devDependencies": {
-    "babel": "^5.8.23",
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
     "chai": "^4.2.0",
     "mocha": "^5.2.0"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
   }
 }

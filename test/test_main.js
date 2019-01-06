@@ -1,5 +1,5 @@
-var {expect} = require('chai');
-var {MyClass, MyMainClass} = require('../src/main.js');
+import { expect } from 'chai';
+import { MyClass, MyMainClass } from '../src/main';
 
 const test_scenario_inputs = {
     "Basic item": [
