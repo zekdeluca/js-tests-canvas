@@ -1,12 +1,12 @@
 {
   "name": "js-tests-canvas",
   "version": "1.0.0",
-  "main": "index.mjs",
+  "main": "index.js",
   "private": true,
   "scripts": {
     "test": "mocha --compilers js:babel-core/register",
-    "start": "cp ./src/my_main_class.js ./src/my_main_class.mjs; cp ./src/my_class.js ./src/my_class.mjs; node --experimental-modules index.mjs",
-    "debug": "cp ./src/my_main_class.js ./src/my_main_class.mjs; cp ./src/my_class.js ./src/my_class.mjs; node inspect --experimental-modules index.mjs"
+    "start": "./scripts/generate_mjs.sh; node --experimental-modules index.mjs",
+    "debug": "./scripts/generate_mjs.sh; node inspect --experimental-modules index.mjs"
   },
   "dependencies": {
     "babel-core": "^6.26.3",
