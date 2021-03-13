@@ -1,6 +1,6 @@
 import { expect } from 'chai';
-import { MyClass } from '../src/my_class';
-import { MyMainClass } from '../src/my_main_class';
+import { MyClass } from '../src/my_class.js';
+import { MyMainClass } from '../src/my_main_class.js';
 
 const test_scenario_inputs = {
     "Basic item": [
