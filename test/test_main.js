@@ -1,14 +1,15 @@
-import { expect } from 'chai';
+import { expect, assert } from 'chai';
 
-const test_scenario_inputs = {
-    'Basic item': {
-        input: '1',
-        output: '1',
+const testScenarioInputs = {
+    Base: {
+        input: [0, 1],
+        output: [0, 1],
     },
 };
 
-describe('This is my test suite', function() {
+describe('#Tests', function() {
     it('Should behave as expected', function() {
-        expect(test_scenario_inputs['Basic item'].input).to.equal(test_scenario_inputs['Basic item'].output);
+        expect(testScenarioInputs['Base'].output).to.not.be.undefined;
+        assert.deepEqual(testScenarioInputs['Base'].input, testScenarioInputs['Base'].output);
     });
 });
